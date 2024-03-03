@@ -1,0 +1,70 @@
+#root {
+  padding: 0; 
+  margin: 0; 
+  box-sizing: border-box;
+}
+
+.app {
+  padding: 24px; 
+  min-height: 100vh; 
+}
+
+#light.app {
+  background: #f4f6fa url("./assets/pattern-background-mobile-light.svg"); 
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#dark.app {
+  background: #313e51 url("./assets/pattern-background-mobile-dark.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#light .text {
+  color: #313e51; 
+}
+
+#dark .text {
+  color: white; 
+}
+
+#light .background {
+  background-color: white; 
+}
+
+#dark .background {
+  background-color: #3B4D66;
+}
+
+@media screen and (min-width: 700px) {
+  .app {
+    padding: 40px 64px; 
+  }
+  #dark.app {
+    background: #313e51 url("./assets/pattern-background-tablet-dark.svg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #light.app {
+    background: #f4f6fa url("./assets/pattern-background-tablet-light.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .app {
+    padding: 83px 0; 
+  }
+  #dark.app {
+    background: #313e51 url("./assets/pattern-background-desktop-dark.svg"); 
+    background-repeat: no-repeat;
+    background-size: cover; 
+  }
+  #light.app {
+    background: #f4f6fa url("./assets/pattern-background-desktop-light.svg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+  }
+}

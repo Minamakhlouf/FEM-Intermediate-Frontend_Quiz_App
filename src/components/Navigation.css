@@ -1,0 +1,75 @@
+.navigation {
+    display: flex; 
+    justify-content: space-between;
+    margin-bottom: 49px; 
+}
+
+.navigation_quiz {
+    display: flex;
+    align-items: center;
+    gap: 16px; 
+    font-size: 18px; 
+    font-weight: 500; 
+}
+
+.navigation_image-style {
+    border: 1px solid black; 
+}
+
+.navigation_button {
+    display: flex; 
+    gap: 8px; 
+    height: 28px; 
+    align-items: center;
+}
+
+.navigation_icons {
+    display: flex; 
+    align-items: center;
+}
+
+.navigation_img {
+    animation: iconAnimation 0.3s ease-in-out; 
+    transition: all 0.3s ease-in-out;
+}
+
+.navigation_img--toggled {
+    animation: iconAnimation 0.3s ease-in-out; 
+    transition: all 0.3s ease-in-out;
+}
+
+.navigation_toggle {
+    width: 48px; 
+    background-color: #a729f5;
+    padding: 4px; 
+    border-radius: 10px;
+    cursor: pointer; 
+    display: flex; 
+}
+
+.navigation_toggle--toggled {
+    justify-content: flex-end;
+}
+
+.navigation_ball {
+    width: 20px; 
+    height: 20px; 
+    background-color: white;
+    border-radius: 50%;
+}
+
+@media screen and (min-width: 700px) {
+    .navigation_quiz {
+        font-size: 28px; 
+    }    
+}
+
+@media screen and (min-width: 1200px) {
+    .navigation {
+        max-width: 1157px;
+        margin: 0 auto 85px; 
+    }
+    .navigation_quiz {
+        gap: 24px; 
+    }
+}
