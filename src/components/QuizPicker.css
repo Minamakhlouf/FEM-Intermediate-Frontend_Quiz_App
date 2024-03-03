@@ -59,4 +59,7 @@
     .quiz-picker_list, .quiz-picker_text-container {
         width: 100%; 
     }
+    .quiz-picker_button {
+        padding: 20px; 
+    }
 }
