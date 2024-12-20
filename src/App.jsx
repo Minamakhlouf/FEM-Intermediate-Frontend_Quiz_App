@@ -26,11 +26,11 @@ function App() {
   }
 
   return (
-    <div className="app" id={idName}>
+    <main className="app" id={idName}>
       <Navigation quizzes={quizzes} index={quizIndex} onColorSchemeToggle={onColorSchemeToggle}/>
       {quizIndex === "" && <QuizPicker quizInfo={quizzes} onQuizPick={onQuizPick}/>} 
       {quizIndex !== "" && <Quiz chosenQuiz={quizzes[quizIndex]} onQuizReset={onQuizReset}/>}
-    </div>
+    </main>
   )
 }
 

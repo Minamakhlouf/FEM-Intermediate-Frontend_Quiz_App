@@ -8,7 +8,7 @@ const QuizPicker = (props) => {
             <p className="quiz-picker_text">Pick a subject and get started.</p>
         </div>
         <ul className="quiz-picker_list">
-            {props.quizInfo.map((quiz, index) => { return <li key={quiz.title}><button className="quiz-picker_button background text" onClick={(event) => { if (event.type === "keydown" && event.key !== "Enter") {return} props.onQuizPick(index)}}><div style={{backgroundColor: quiz.iconBackground, borderRadius: "10px"}}><img src={quiz.icon}/></div> {quiz.title}</button></li>})}
+            {props.quizInfo.map((quiz, index) => { return <li key={quiz.title}><button className="quiz-picker_button background text" onClick={(event) => { if (event.type === "keydown" && event.key !== "Enter") {return} props.onQuizPick(index)}}><div style={{backgroundColor: quiz.iconBackground, borderRadius: "10px"}}><img src={quiz.icon} alt={`${quiz.title} icon`}/></div> {quiz.title}</button></li>})}
         </ul>
     </section>
 )}
